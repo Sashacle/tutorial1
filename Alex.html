@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Offline web app</title>
+</head>
+<script>
+    function changeImage1(){
+        document.images["jsbutton"].src = "Town1.jpg";
+        return true;
+    }
+    function changeImage2(){
+        document.images["jsbutton"].src = "Town2.jpg";
+        return true;
+    }
+</script>
+<body>
+<img name="jsbutton" src="Town1.jpg" width="100%" height="100%" border="0">
+<br><input type="button" onclick="changeImage1()" value="First town">
+&nbsp;&nbsp;<input type="button" onclick="changeImage2()" value="Second town">
+</body>
+</html>
